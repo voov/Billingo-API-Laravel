@@ -1,0 +1,22 @@
+{
+  "name": "voov/billingo-api-laravel",
+  "description": "Billingo API Provider for Laravel 5+",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daniel Fekete",
+      "email": "daniel.fekete@voov.hu"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/support": "5.1.*|5.2.*",
+    "voov/billingo-api-connector": "1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Billingo\\API\\Laravel\\": "src"
+    }
+  }
+}
