@@ -33,4 +33,16 @@ class BillingoServiceProvider extends ServiceProvider
         $this->app->alias('billingo-request', Request::class);
     }
 
+    /**
+     * Perform post-registration booting of services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__.'/config/billingo.php' => config_path('billingo.php'),
+        ]);
+    }
+
 }
