@@ -41,7 +41,7 @@ class BillingoServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/billingo.php' => config_path('billingo.php'),
+            __DIR__.'/../config/billingo.php' => config_path('billingo.php'),
         ]);
     }
 
