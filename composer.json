@@ -11,12 +11,22 @@
   ],
   "require": {
     "php": ">=5.5.9",
-    "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*",
+    "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*",
     "voov/billingo-api-connector": "1.*"
   },
   "autoload": {
     "psr-4": {
       "Billingo\\API\\Laravel\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Billingo\\API\\Laravel\\BillingoServiceProvider"
+      ],
+      "aliases": {
+        "Billingo": "Billingo\\API\\Laravel\\BillingoFacade"
+      }
     }
   }
 }
